@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  height: 100%; }
+  body h1 {
+    font-size: 2.3rem;
+    padding: 1rem 10%;
+    font-family: 'Nunito', sans-serif; }
+  body .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: linear-gradient(to top, #f8ad3c, #fa956d) no-repeat fixed;
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: 0 7px 30px -10px rgba(101, 118, 126, 0.8);
+    margin: 0 auto;
+    height: 33rem; }
+    body .App #inputContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin-top: 2rem;
+      height: 30%; }
+      body .App #inputContainer #textboxContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center; }
+        body .App #inputContainer #textboxContainer .tb {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center; }
+          body .App #inputContainer #textboxContainer .tb input {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            width: 80%;
+            font-size: 2.5rem;
+            border-bottom: 5px solid white;
+            color: white;
+            border-radius: .3rem;
+            font-family: 'Gelasio', serif;
+            max-width: 14rem; }
+          body .App #inputContainer #textboxContainer .tb input:focus {
+            outline: none; }
+          body .App #inputContainer #textboxContainer .tb h5 {
+            color: white;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif; }
+      body .App #inputContainer #btnContainer button {
+        margin: 0 auto;
+        background: #582cd3;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+        font-family: 'Nunito', sans-serif;
+        box-shadow: 0 7px 30px -10px rgba(119, 97, 50, 0.664);
+        margin-top: 3rem; }
+    body .App #unitContainer label {
+      display: inline;
+      padding: 2rem;
+      position: relative;
+      padding-left: 20px; }
+      body .App #unitContainer label input {
+        display: none; }
+      body .App #unitContainer label span {
+        font-family: helvetica;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        overflow: hidden;
+        line-height: 3;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 10pt;
+        left: 0;
+        top: 50%;
+        margin: -7.5px auto 0 .4rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #fa895c6e;
+        color: white;
+        font-weight: bold; }
+      body .App #unitContainer label input:checked + span {
+        background: #e77f5588; }
+    body .App #displayContainer {
+      width: 90%;
+      margin: 0 auto; }
+      body .App #displayContainer #distance {
+        font-size: 3.8rem;
+        text-align: center;
+        color: white;
+        font-family: 'Gelasio', serif;
+        font-weight: 700;
+        margin-top: 2.3rem; }
+      body .App #displayContainer #errorMsg {
+        color: white;
+        text-align: center;
+        font-family: 'Gelasio', serif;
+        font-size: 2rem; }
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  body h1 {
+    font-size: 3rem;
+    padding-left: 5%; }
+  body .App {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 22rem; }
+    body .App #displayContainer {
+      width: 80%;
+      height: 100%;
+      display: grid; }
+      body .App #displayContainer #distance {
+        font-size: 5rem;
+        margin: auto 0;
+        height: 45%;
+        text-align: center; }
+      body .App #displayContainer #errorMsg {
+        width: 80%;
+        margin: 0 auto; } }
+
+@media (min-width: 1201px) {
+  body h1 {
+    font-size: 4rem;
+    padding-left: 5%; }
+  body .App {
+    display: grid;
+    background: linear-gradient(to right, #f8ad3c, #fa956d) no-repeat fixed;
+    grid-template-columns: 1fr 1fr;
+    height: 21rem;
+    width: 90%;
+    justify-items: center; }
+    body .App #displayContainer {
+      width: 34rem;
+      max-width: 34rem; }
+      body .App #displayContainer #distance {
+        font-size: 6rem;
+        vertical-align: middle; }
+    body .App #errorMsg {
+      width: 80%;
+      margin: 0 auto; } }
